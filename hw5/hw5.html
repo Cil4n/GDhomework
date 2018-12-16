@@ -173,12 +173,12 @@ animate();
 				var onError = function(xhr) {};
 				//THREE.Loader.Handlers.add(/\.dds$/i, new THREE.DDSLoader());
 				var mtlLoader = new THREE.MTLLoader();
-				mtlLoader.setPath('Model/');
+				mtlLoader.setPath('model/');
 				mtlLoader.load('materials.mtl', function(materials) {
 				materials.preload();
 				var objLoader = new THREE.OBJLoader();
 				objLoader.setMaterials(materials);
-				objLoader.setPath('Model/');
+				objLoader.setPath('model/');
 				objLoader.load('model.obj', function(object) {
 						treasure1 =  unitize (object, 100);
 						treasure1.visible = true;
