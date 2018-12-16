@@ -400,7 +400,7 @@ animate();
 
 					var gyro = new THREE.Gyroscope();  //??
 					gyro.add( camera );
-					//gyro.add( light, light.target );
+					gyro.add( light, light.target );
 
 					characters[ Math.floor( nSkins / 2 ) ].root.add( gyro );
 
