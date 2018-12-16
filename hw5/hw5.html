@@ -109,7 +109,7 @@ animate();
 				scene.add( new THREE.AmbientLight( 0x222222 ) );
 
 				var light = new THREE.DirectionalLight( 0xffffff, 2.25 );
-				light.position.set( 200, 450, 500 );
+				light.position.set( 1000, 500, 1000 );
 
 				light.castShadow = true;
 
@@ -125,7 +125,7 @@ animate();
 				light.shadow.camera.bottom = -350;
 
 				scene.add( light );
-				// scene.add( new THREE.CameraHelper( light.shadow.camera ) );
+				//scene.add( new THREE.CameraHelper( light.shadow.camera ) );
 
 
 				//  GROUND
@@ -400,7 +400,7 @@ animate();
 
 					var gyro = new THREE.Gyroscope();  //??
 					gyro.add( camera );
-					gyro.add( light, light.target );
+					//gyro.add( light, light.target );
 
 					characters[ Math.floor( nSkins / 2 ) ].root.add( gyro );
 
